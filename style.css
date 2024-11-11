@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6320dd;
+  }
+  
+  #game {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid #FFF;
+    transition: background-color 1s ease;
+  }
+  
+  .block {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hazard {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .shield {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('3.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slow-motion {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('4.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #player {
+    position: absolute;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+    background-image: url('c1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #score, #lives {
+    position: absolute;
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  
+  #score { top: 10px; left: 10px; }
+  #lives { top: 10px; right: 10px; }
+  
